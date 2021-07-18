@@ -5,7 +5,7 @@ import CardItem from './about';
 function Aboutus() {
   return (
     <div className='cards'>
-      <h1>Check out these EPIC career paths !</h1>
+      <h1>About US !</h1>
       <div className='cards__container'>
         <div className='cards__wrapper'>
           <ul className='cards__items'>

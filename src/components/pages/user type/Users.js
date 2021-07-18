@@ -1,5 +1,5 @@
 import React from 'react';
-import '../../Cards.css';
+import './UserCards.css';
 import CardItem from './UserItem';
 
 function Users() {
