@@ -15,6 +15,7 @@ import Paper from '@material-ui/core/Paper';
 import Typography from '@material-ui/core/Typography';
 
 import GitHubIcon from '@material-ui/icons/GitHub';
+import RotateLeftIcon from '@material-ui/icons/RotateLeft';
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
 import { faCoffee } from '@fortawesome/free-solid-svg-icons'
 import { grey } from '@material-ui/core/colors';
@@ -33,7 +34,7 @@ export default function Devops() {
 
   return (
     
-    <div style={{backgroundColor:"lightblue"}}>
+    <div className="cards">
       <h1>DEVOPS</h1>
     <Timeline align="alternate">
       <TimelineItem>
@@ -84,7 +85,7 @@ export default function Devops() {
       <TimelineItem>
         <TimelineOppositeContent>
           <Typography variant="body2" color="textSecondary">
-            2
+            3
           </Typography>
         </TimelineOppositeContent>
         <TimelineSeparator>
@@ -106,7 +107,7 @@ export default function Devops() {
       <TimelineItem>
       <TimelineOppositeContent>
           <Typography variant="body2" color="textSecondary">
-            3
+            4
           </Typography>
         </TimelineOppositeContent>
         <TimelineSeparator>
@@ -127,10 +128,33 @@ export default function Devops() {
 
 
 
+
       <TimelineItem>
       <TimelineOppositeContent>
           <Typography variant="body2" color="textSecondary">
-            4
+            5
+          </Typography>
+        </TimelineOppositeContent>
+        <TimelineSeparator>
+          <TimelineDot color="secondary">
+            <RotateLeftIcon />
+          </TimelineDot>
+        </TimelineSeparator>
+        <TimelineContent>
+          <Paper elevation={5} className={classes.paper}>
+            <Typography variant="h6" component="h1">
+              CI/CD Tool
+            </Typography>
+            <Typography>With the continuous method of software development, you continuously build, test, and deploy iterative code changes.It helps to ease devlopers life ex:- jenkins
+            </Typography>
+          </Paper>
+        </TimelineContent>
+      </TimelineItem>
+
+      <TimelineItem>
+      <TimelineOppositeContent>
+          <Typography variant="body2" color="textSecondary">
+            6
           </Typography>
         </TimelineOppositeContent>
         <TimelineSeparator>
@@ -141,9 +165,53 @@ export default function Devops() {
         <TimelineContent>
           <Paper elevation={5} className={classes.paper}>
             <Typography variant="h6" component="h1">
-              Repeat
+              Testing
             </Typography>
-            <Typography>Because this is the life you love!</Typography>
+            <Typography>Software testing in the DevOps world requires an automated test process that provides feedback at every build and change</Typography>
+          </Paper>
+        </TimelineContent>
+      </TimelineItem>
+
+      <TimelineItem>
+      <TimelineOppositeContent>
+          <Typography variant="body2" color="textSecondary">
+            7
+          </Typography>
+        </TimelineOppositeContent>
+        <TimelineSeparator>
+          <TimelineDot color="secondary">
+            <RepeatIcon />
+          </TimelineDot>
+        </TimelineSeparator>
+        <TimelineContent>
+          <Paper elevation={5} className={classes.paper}>
+            <Typography variant="h6" component="h1">
+              Deployement
+            </Typography>
+            <Typography>Time to make it available for everone to Use ex:- physical server , Docker container, Kube, Tomcat</Typography>
+          </Paper>
+        </TimelineContent>
+      </TimelineItem>
+
+      <TimelineItem>
+      <TimelineOppositeContent>
+          <Typography variant="body2" color="textSecondary">
+            8
+          </Typography>
+        </TimelineOppositeContent>
+        <TimelineSeparator>
+          <TimelineDot color="secondary">
+            <RepeatIcon />
+          </TimelineDot>
+        </TimelineSeparator>
+        <TimelineContent>
+          <Paper elevation={5} className={classes.paper}>
+            <Typography variant="h6" component="h1">
+              Monitor
+            </Typography>
+            <Typography>You need to keep an eye on your application , that how it behaves in Live environment. If there is any downtime ,
+              Tools which helps here are like  ex:- ELK stack , splunk 
+            </Typography>
           </Paper>
         </TimelineContent>
       </TimelineItem>

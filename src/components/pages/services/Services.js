@@ -11,24 +11,24 @@ const options = {
   enableTooltip: true,
   deterministic: false,
   fontFamily: "impact",
-  fontSizes: [30, 60],
+  fontSizes: [30, 45],
   fontStyle: "normal",
   fontWeight: "normal",
-  padding: 1,
+  padding: 4,
   rotations: 3,
   rotationAngles: [0, 45],
   scale: "sqrt",
   spiral: "archimedean",
-  transitionDuration: 1000
+  transitionDuration: 2000
 };
 
 export default function Services() {
   return <>
 
-  <div>
+  <div style={{backgroundColor:"#efffef",alignContent:"center"}}>
     <br/>
     <h1 style={{fontFamily:"sans-serif"}}>Start your career in right direction</h1>
-      <div style={{ height: 800, width: 1200 ,textAlign:'center',marginLeft:"15%"}}>
+      <div style={{ height: 800, width: 1200 }}>
         <ReactWordcloud options={options} words={words} />
       </div>
     </div>
