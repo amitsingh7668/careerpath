@@ -8,7 +8,7 @@ h1 {
 }
 
 .cards__container {
-  display: block;
+  display: block !important;
   flex-flow: column;
   align-items: center;
   max-width: 1120px;
@@ -33,7 +33,7 @@ h1 {
 }
 
 .cards__item__link {
-  display: flex;
+  display: block !important;
   flex-flow: column;
   width: 100%;
   box-shadow: 0 6px 20px rgba(56, 125, 255, 0.17);
